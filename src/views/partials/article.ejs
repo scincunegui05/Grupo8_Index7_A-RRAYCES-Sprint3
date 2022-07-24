@@ -1,0 +1,13 @@
+<article>
+    <a href="/products/detail/<%- producto.id %>"> 
+        <figure>
+            <img src="/images/<%= producto.imagen %>" alt="Imagen Planta" class="productImage">
+            <a href="#"><span class="material-symbols-outlined" id="shopProduct">shopping_bag</span></a>
+        </figure>
+        <div class="description"> 
+            <h3 class="name"><%= producto.nombre %></h3>
+            <p class="price">$ <%= producto.precio %></p>
+            <p class="fee">6 cuotas sin interés de <strong>$<%= producto.cuotas %> </strong></p>
+        </div>
+    </a>
+</article>

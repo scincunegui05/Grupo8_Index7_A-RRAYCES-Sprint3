@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <%- include('../partials/head.ejs') %> 
+
+<body>
+
+   <%- include('../partials/headerAdmin.ejs') %> 
+
+   <main class="createMain">
+      <h2>Crear producto</h2>
+      <form class="createForm" action="/create" method="POST">
+         <div class="createInputContainer">
+            <label for="nombre">Nombre </label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+            <div class="createImages">
+               <label for="imagen"> Imagen </label>
+               <input type="file" name="imagen" id="imagen" accept=".png, .jpeg, .jpg" required>
+               <label for="imagenDetalle"> Imagen detalle </label>
+               <input type="file" name="imagenDetalle" id="imagenDetalle" accept=".png, .jpeg, .jpg" required>
+            </div>
+            <label for="tipo">Tipo de producto</label>
+            <!-- <input type="text" name="tipo" id="tipo" required> -->
+            <select name="tipo">
+               <option value=""> Elegí </option>
+               <option value="planta"> Planta </option>
+               <option value="maceta"> Maceta </option>
+               <option value="cuidados"> Tips y cuidados </option>
+            </select>
+            <label>Tamaño</label>
+            <select name="tamaño">
+               <option value=""> Elegí </option>
+               <option value="small"> S (Small) </option>
+               <option value="medium"> M (Medium) </option>
+               <option value="large"> L (Large) </option>
+               <option value="extra-large"> XL (Extra Large) </option>
+            </select>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" required>
+            <div class="createBenefits">
+               <label for="cuotas">Cuotas</label>
+               <input type="number" name="cuotas" id="cuotas" required>
+               <label>Categoría</label>
+               <select name="categoria">
+                  <option value=""> Elegí </option>
+                  <option value="visited"> Últimos visitados </option>
+                  <option value="inSale"> En oferta </option>
+               </select>
+            </div>
+         </div>
+         <button type="submit"> Crear </button>
+      </form>
+   </main>
+
+   <%- include('../partials/footer.ejs') %> 
+   
+</body>
+</html>
