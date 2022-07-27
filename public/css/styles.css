@@ -243,6 +243,7 @@ main section div.products{
 main section div.products article{
     width: 100%;
     margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.2); /* agregamos shadow al card */
     transition: font-weigth 650ms; /* cambiamos valor */
 }
 
@@ -255,6 +256,7 @@ img.productImage{
 /* descripcion producto */
 div.description{
     text-align: center;
+    margin-bottom: 15px;
 }
 
 h3.name{
@@ -405,7 +407,7 @@ main.productDetailMain{
 }
 
 .productDetailDescription select{
-    border-radius: 15px;
+    border-radius: 30px;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 7px;
@@ -425,8 +427,8 @@ main.productDetailMain{
     align-items: center;
     width: 100%;
     border: 1px solid #0f372c;
-    border-radius: 15px;
-    padding: 5px;
+    border-radius: 30px;
+    padding: 7px;
     margin-top: 5px;
     color:#0f372c
 }
@@ -462,6 +464,7 @@ i#plus{
     background-color:#0f372c;
     color: #fff;
     border: none;
+    border-radius: 50px;
     transition: all 0.4s
 }
 
@@ -537,6 +540,8 @@ main  form .titleCart {
     margin-top: 10px;
     margin-bottom: 7px;
     border: 1px solid #0f372c;
+    border-radius: 50px;
+    opacity: 0.5;
 }
 
 .contact input::placeholder{
@@ -559,6 +564,8 @@ main  form .titleCart {
     margin-top: 10px;
     border: 1px solid #0f372c;
     color: #0f372c;
+    border-radius: 50px;
+    opacity: 0.5;
 }
  
 .delivery input{
@@ -567,6 +574,8 @@ main  form .titleCart {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #0f372c;
+    border-radius: 50px;
+    opacity: 0.5;
 }
 
 .delivery input::placeholder{
@@ -587,7 +596,8 @@ main  form .titleCart {
     background-color:#0f372c;
     color: #fff;
     border: none;
-    transition: all 0.2s
+    transition: all 0.2s;
+    border-radius: 50px;
 }
 
 .cartButton button:hover {
@@ -635,6 +645,7 @@ p.moreCart{
 /* section products */
 .line{
     border-bottom: 1px solid #0f372c;
+    opacity: 0.5;
 }
 
 .cartProducts{
@@ -709,7 +720,7 @@ p.moreCart{
 }
 
 .articleDescription select {
-    border-radius: 10px;
+    border-radius: 30px;
     width: 85px;
     margin-bottom: 7px;
     border-color:#0f372c;
@@ -722,8 +733,8 @@ p.moreCart{
     align-items: center;
     width: 85px;
     border: 1px solid #0f372c;
-    border-radius: 10px;
-    padding: 1px;
+    border-radius: 30px;
+    padding: 2px;
 }
 
 .articleAmount span{
@@ -811,6 +822,7 @@ main.userMain{
     color: white;
     font-weight: bold;
     margin-bottom: 5px;
+    border-radius: 50px;
     transition: all 0.2s;
 }
 
@@ -829,6 +841,7 @@ main.userMain{
     padding: 4px;
     color: white;
     font-weight: bold;
+    border-radius: 50px;
     transition: all 0.2s;
 }
 
@@ -845,6 +858,8 @@ main.userMain{
     padding: 5px;
     margin-bottom: 5px;
     border: 1px solid #0f372c;
+    border-radius: 50px;
+    opacity: 0.5;
 }
 
 .registerForm input:focus{
@@ -886,12 +901,14 @@ main.userMain{
     width:50%;
     padding: 7px 15px;
     border: none;
+    border-radius: 50px;
     transition: all 0.4s;
 }
 
 .registerForm button:hover{
     background-color: #9EAB5B;
 }
+
 .contenedorRobot{
     display: flex;
     justify-content: center;
@@ -902,7 +919,7 @@ main.userMain{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #0f372c;
+    border: 1px solid rgba(15, 55, 44, 0.5);
     width: 55%;
     padding: 10px;
     margin-top: 30px;
@@ -968,6 +985,8 @@ main.userMain{
     padding: 5px;
     margin-bottom: 5px;
     border: 1px solid #0f372c;
+    border-radius: 50px;
+    opacity: 0.5;
 }
 
 .loginForm input:focus{
@@ -1023,6 +1042,7 @@ main.userMain{
     width:50%;
     padding: 7px 15px;
     border: none;
+    border-radius: 50px;
     transition: all 0.4s;
 }
 
@@ -1077,8 +1097,8 @@ main.userMain{
 .createForm input , .createForm select{
     width: 90vw;
     padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     border: 1px solid #0f372c;
 }
 
@@ -1087,7 +1107,9 @@ main.userMain{
 }
 
 .createForm textarea{
-    width: 90vw
+    width: 90vw;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .createForm input:focus{
@@ -1497,12 +1519,13 @@ main.userMain{
     .createImages{
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
+        justify-content: flex-start;
         width:65vw;
     }
 
     .createImages input{
-        width: 30%;
+        width: 60%;
+        margin-left: 30px;
     }
 
     .createBenefits{
@@ -1590,7 +1613,7 @@ main.userMain{
         display: flex;
         width: 50%;
         max-width: 250px;
-        border: solid 2px #0f372c;
+        border: solid 2px rgba(15, 55, 44, 0.5);
         border-radius: 18px;
         margin-left: 40px;
         padding: 0px 10px;
@@ -2053,6 +2076,10 @@ main.userMain{
 
     .loginCon  h2{
         font-size: 32px;
+    }
+
+    .loginConGgFb{
+        width: 50vw;
     }
 
     .gg{
